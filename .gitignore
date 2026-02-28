@@ -1,0 +1,13 @@
+# Dependencies
+frontend/node_modules/
+backend/target/
+
+# Env / IDE
+.env
+.env.local
+.idea/
+.vscode/
+*.iml
+
+# Build
+frontend/dist/

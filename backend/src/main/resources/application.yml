@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/equipment_db}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://db.huuodmmrcftfthyrmbqf.supabase.co:5432/postgres}
     username: ${SPRING_DATASOURCE_USERNAME:postgres}
-    password: ${SPRING_DATASOURCE_PASSWORD:kali}
+    password: ${SPRING_DATASOURCE_PASSWORD:YOUR_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update

@@ -14,6 +14,8 @@ FROM eclipse-temurin:17-jre-jammy
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
+# Expose port 8080 for Render
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the application with memory limits suitable for Render's free tier (512MB limit)
+ENTRYPOINT ["java", "-Xmx300m", "-Xss512k", "-XX:CICompilerCount=2", "-Dserver.port=${PORT:8080}", "-jar", "app.jar"]

@@ -5,7 +5,7 @@ spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require}
     username: ${SPRING_DATASOURCE_USERNAME:postgres.rhutavjlmgzqalodhogp}
-    password: ${SPRING_DATASOURCE_PASSWORD:YOUR_PASSWORD}
+    password: ${SPRING_DATASOURCE_PASSWORD:Qwerty@+-+-@100}
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect

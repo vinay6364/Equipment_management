@@ -1,7 +1,10 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://db.huuodmmrcftfthyrmbqf.supabase.co:5432/postgres?sslmode=require}
-    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres?sslmode=require}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres.rhutavjlmgzqalodhogp}
     password: ${SPRING_DATASOURCE_PASSWORD:YOUR_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
